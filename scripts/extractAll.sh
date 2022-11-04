@@ -22,29 +22,29 @@ OLDDIR=$PWD
 cd $1
 
 # Extract 3D Keypoints
-if [ -f vgaPose3d_stage1_coco19.tar ]; then
-	tar -xf vgaPose3d_stage1_coco19.tar
-fi
+#if [ -f vgaPose3d_stage1_coco19.tar ]; then
+#E	tar -xf vgaPose3d_stage1_coco19.tar
+#fi
 
 if [ -f hdPose3d_stage1_coco19.tar ]; then
 	tar -xf hdPose3d_stage1_coco19.tar
 fi
 
 
-if [ -f hdFace3d.tar ]; then
-	tar -xf hdFace3d.tar
-fi
+#if [ -f hdFace3d.tar ]; then
+#	tar -xf hdFace3d.tar
+#fi
 
-if [ -f hdHand3d.tar ]; then
-	tar -xf hdHand3d.tar
-fi
+#if [ -f hdHand3d.tar ]; then
+#	tar -xf hdHand3d.tar
+#fi
 
-if [ -f hdMeshTrack_face.tar ]; then
-	tar -xf hdMeshTrack_face.tar
-fi
+#if [ -f hdMeshTrack_face.tar ]; then
+#	tar -xf hdMeshTrack_face.tar
+#fi
 
 # Extract VGA images
-$DIR/vgaImgsExtractor.sh ${fmt}
+#$DIR/vgaImgsExtractor.sh ${fmt}
 
 # Extract HD images
 $DIR/hdImgsExtractor.sh ${fmt}
